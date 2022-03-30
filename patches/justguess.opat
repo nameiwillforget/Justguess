@@ -4,86 +4,20 @@
  (:doc "")
  (:info
   (:created "2020/11/16 8:22:03")
-  (:modified "2022/03/11 21:37:22")
+  (:modified "2022/03/30 11:46:42")
   (:by "om-sharp")
   (:version 1.05))
- (:window (:size (1098 816)) (:position (38 83)))
+ (:window (:size (1218 791)) (:position (308 83)))
  (:grid nil)
  (:lock nil)
  (:boxes
   (:box
    (:type :object)
-   (:reference textbuffer)
-   (:group-id nil)
-   (:name "textfile")
-   (:x 134)
-   (:y 426)
-   (:w 70)
-   (:h 40)
-   (:color nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align :center)
-   (:display :mini-view)
-   (:showname nil)
-   (:lock :locked)
-   (:lambda nil)
-   (:reactive nil)
-   (:inputs
-    (:input
-     (:type :standard)
-     (:name "SELF")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :standard)
-     (:name "CONTENTS")
-     (:value nil)
-     (:reactive nil))
-    (:input
-     (:type :key)
-     (:name "output-mode")
-     (:value :text-list)
-     (:reactive nil)))
-   (:outputs
-    (:output (:name "SELF") (:reactive nil))
-    (:output (:name "CONTENTS") (:reactive nil))
-    (:output (:name "output-mode") (:reactive nil)))
-   (:window (:size (960 998)) (:position (0 45)))
-   (:edition-params (:output-mode :text-list))
-   (:value
-    (:object
-     (:class textbuffer)
-     (:slots
-      ((:contents
-        (:list
-         "sr = 44100"
-         "ksmps = 32"
-         "nchnls = 2"
-         "0dbfs  = 1"
-         ""
-         "instr 1"
-         ""
-         "kcps = 220"
-         "icps = 220"
-         "ifn  = 0"
-         "imeth = p4"
-         ""
-         "asig pluck 0.3, p5, 220, ifn, imeth, .1, 10"
-         "     outs asig, asig"
-         ""
-         ""
-         "endin"))))
-     (:add-slots ((:input-mode :lines-cols)))))
-   (:id 0))
-  (:box
-   (:type :object)
    (:reference sound)
    (:group-id nil)
    (:name "csound-simple")
-   (:x 102)
-   (:y 558)
+   (:x 187)
+   (:y 571)
    (:w 293)
    (:h 92)
    (:color nil)
@@ -133,17 +67,17 @@
          (:directory (:relative :up :up "out-files"))
          (:device nil)
          (:host nil)
-         (:name "temp_csound_file340")
+         (:name "temp_csound_file1450")
          (:type "WAV")))))))
-   (:id 1))
+   (:id 0))
   (:box
    (:library "csound")
    (:type :function)
    (:reference csound-synth)
    (:group-id nil)
    (:name "csound-synth")
-   (:x 113)
-   (:y 484)
+   (:x 198)
+   (:y 497)
    (:w 135)
    (:h 36)
    (:color nil)
@@ -167,15 +101,15 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 2))
+   (:id 1))
   (:box
    (:library "OM2Csound")
    (:type :function)
    (:reference instrument0)
    (:group-id nil)
    (:name "instrument0")
-   (:x 251)
-   (:y 383)
+   (:x 426)
+   (:y 396)
    (:w 184)
    (:h 36)
    (:color nil)
@@ -214,13 +148,13 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 3))
+   (:id 2))
   (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 358)
+   (:x 533)
    (:y 135)
    (:w 145)
    (:h 36)
@@ -235,13 +169,13 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list 4/3 3/2 700 500))
-   (:id 4))
+   (:id 3))
   (:box
    (:type :value)
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 256)
+   (:x 431)
    (:y 346)
    (:w 32)
    (:h 36)
@@ -256,13 +190,13 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value 1)
-   (:id 5))
+   (:id 4))
   (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 289)
+   (:x 464)
    (:y 346)
    (:w 32)
    (:h 36)
@@ -277,13 +211,13 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list 0 1 2 3 4 4))
-   (:id 6))
+   (:id 5))
   (:box
    (:type :value)
    (:reference cons)
    (:group-id nil)
    (:name "value box")
-   (:x 321)
+   (:x 496)
    (:y 346)
    (:w 34)
    (:h 36)
@@ -298,13 +232,13 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value (:list 1 1 1 1 3 3))
-   (:id 7))
+   (:id 6))
   (:box
    (:type :value)
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 283)
+   (:x 458)
    (:y 136)
    (:w 63)
    (:h 36)
@@ -319,13 +253,13 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value 8000)
-   (:id 8))
+   (:id 7))
   (:box
    (:type :value)
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 355)
+   (:x 530)
    (:y 346)
    (:w 32)
    (:h 36)
@@ -340,15 +274,15 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value 1)
-   (:id 9))
+   (:id 8))
   (:box
    (:library "OM2Csound")
    (:type :function)
    (:reference write-csound-score)
    (:group-id nil)
    (:name "write-csound-score")
-   (:x 214)
-   (:y 431)
+   (:x 308)
+   (:y 450)
    (:w 178)
    (:h 36)
    (:color nil)
@@ -372,13 +306,13 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 10))
+   (:id 9))
   (:box
    (:type :function)
    (:reference om-random)
    (:group-id nil)
    (:name "om-random")
-   (:x 212)
+   (:x 387)
    (:y 184)
    (:w 141)
    (:h 36)
@@ -388,7 +322,7 @@
    (:text-font nil)
    (:align nil)
    (:icon :left)
-   (:lock :locked)
+   (:lock nil)
    (:lambda nil)
    (:reactive nil)
    (:inputs
@@ -399,13 +333,13 @@
      (:value 1)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 11))
+   (:id 10))
   (:box
    (:type :object)
    (:reference textbuffer)
    (:group-id nil)
    (:name nil)
-   (:x 354)
+   (:x 529)
    (:y 267)
    (:w 80)
    (:h 40)
@@ -438,15 +372,15 @@
    (:value
     (:object
      (:class textbuffer)
-     (:slots ((:contents (:list "651.3066" "868.4088" "4/3"))))
+     (:slots ((:contents (:list "65.595566" "98.28231" "700"))))
      (:add-slots ((:input-mode :lines-cols)))))
-   (:id 12))
+   (:id 11))
   (:box
    (:type :value)
    (:reference fixnum)
    (:group-id nil)
    (:name "value box")
-   (:x 223)
+   (:x 398)
    (:y 136)
    (:w 54)
    (:h 36)
@@ -460,14 +394,14 @@
    (:reactive nil)
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
-   (:value 2000)
-   (:id 13))
+   (:value 4000)
+   (:id 12))
   (:box
    (:type :value)
    (:reference ratio)
    (:group-id nil)
    (:name "value box")
-   (:x 512)
+   (:x 687)
    (:y 134)
    (:w 41)
    (:h 37)
@@ -482,7 +416,7 @@
    (:inputs)
    (:outputs (:output (:name "value") (:reactive nil)))
    (:value 4/3)
-   (:id 14))
+   (:id 13))
   (:box
    (:type :abstraction)
    (:reference
@@ -999,7 +933,7 @@
       (:connection (:from (:box 15 :out 0)) (:to (:box 6 :in 0))))))
    (:group-id nil)
    (:name "forms")
-   (:x 347)
+   (:x 522)
    (:y 315)
    (:w 114)
    (:h 28)
@@ -1020,7 +954,7 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 15))
+   (:id 14))
   (:box
    (:type :abstraction)
    (:reference
@@ -1489,7 +1423,7 @@
        (:attributes (:color nil :style nil :modif (0 -1/7)))))))
    (:group-id nil)
    (:name "interval")
-   (:x 347)
+   (:x 522)
    (:y 227)
    (:w 114)
    (:h 28)
@@ -1515,13 +1449,13 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 16))
+   (:id 15))
   (:box
    (:type :function)
    (:reference list)
    (:group-id nil)
    (:name "list")
-   (:x 502)
+   (:x 677)
    (:y 184)
    (:w 59)
    (:h 36)
@@ -1541,9 +1475,9 @@
      (:value nil)
      (:reactive nil)))
    (:outputs (:output (:name "out") (:reactive nil)))
-   (:id 17))
+   (:id 16))
   (:comment
-   (:x 294)
+   (:x 469)
    (:y 11)
    (:w 337)
    (:h 128)
@@ -1556,9 +1490,9 @@
    (:text
     "Put the list of intervals you want to train into the second to right box.You can express it as a ratio or an integer. If it is given as an integer, Justguess assumes it is in midcents and adds that amount of cents to it.
 ")
-   (:id 18))
+   (:id 17))
   (:comment
-   (:x 565)
+   (:x 740)
    (:y 140)
    (:w 418)
    (:h 68)
@@ -1570,9 +1504,9 @@
    (:align nil)
    (:text
     "If you want to hear a specific interval, put it into the right box and connect it to the rightmost input of the \"interval\" box. ")
-   (:id 19))
+   (:id 18))
   (:comment
-   (:x 451)
+   (:x 626)
    (:y 257)
    (:w 389)
    (:h 48)
@@ -1584,25 +1518,11 @@
    (:align nil)
    (:text
     "The interval that is chosen by the RNG is displayed as the third item in the text box to the left.")
-   (:id 20))
+   (:id 19))
   (:comment
-   (:x 450)
-   (:y 363)
-   (:w 612)
-   (:h 68)
-   (:fgcolor nil)
-   (:bgcolor nil)
-   (:border nil)
-   (:roundness nil)
-   (:text-font nil)
-   (:align nil)
-   (:text
-    "The second input of the instrument contains the list of note onsets and the third of durations, so the two can be used to lengthen/shorten the notes. The fourthcan be set to a number from 1 to 6 to vary timbre. See also the Csound doumentation.")
-   (:id 21))
-  (:comment
-   (:x 31)
-   (:y 336)
-   (:w 221)
+   (:x 625)
+   (:y 376)
+   (:w 537)
    (:h 88)
    (:fgcolor nil)
    (:bgcolor nil)
@@ -1611,11 +1531,11 @@
    (:text-font nil)
    (:align nil)
    (:text
-    "The box below is a simple Csound string orchestra file. Other orchestra files can be used to vary timbre.")
-   (:id 22))
+    "The first input is the instrument number, the second contains the list of note onsets and the third of durations, so the two can be used to lengthen/shorten the notes. The fourth can be used to vary the wave form of the the oscilator. See also the Csound doumentation.")
+   (:id 20))
   (:comment
-   (:x 522)
-   (:y 463)
+   (:x 607)
+   (:y 476)
    (:w 312)
    (:h 208)
    (:fgcolor nil)
@@ -1626,10 +1546,10 @@
    (:align nil)
    (:text
     "As it is currently set, each evaluation sets the base of the interval anew. To fix it, select the om-random box and lock its evaluation by pressing b twice. To unlock it, press b again. Note that a box has to be evaluated at least once before it is locked again to obtain a different value, so if you want to switch between fixed interval bases, you have to press b, then v, then b.")
-   (:id 23))
+   (:id 21))
   (:comment
-   (:x 37)
-   (:y 668)
+   (:x 122)
+   (:y 681)
    (:w 423)
    (:h 48)
    (:fgcolor nil)
@@ -1640,27 +1560,582 @@
    (:align nil)
    (:text
     "To listen to an interval, select the sound box above and evaluate it by pressing v, then listen by pressing space.")
-   (:id 24)))
+   (:id 22))
+  (:box
+   (:type :object)
+   (:reference textbuffer)
+   (:group-id nil)
+   (:name "textfile")
+   (:x 212)
+   (:y 449)
+   (:w 70)
+   (:h 40)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :mini-view)
+   (:showname nil)
+   (:lock :locked)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "CONTENTS")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :key)
+     (:name "output-mode")
+     (:value :text-list)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "SELF") (:reactive nil))
+    (:output (:name "CONTENTS") (:reactive nil))
+    (:output (:name "output-mode") (:reactive nil)))
+   (:window (:size (500 500)) (:position (128 173)))
+   (:edition-params (:output-mode :text-list))
+   (:value
+    (:object
+     (:class textbuffer)
+     (:slots
+      ((:contents
+        (:list
+         "sr = 44100"
+         "ksmps = 32"
+         "nchnls = 2"
+         "0dbfs  = 1"
+         ""
+         ""
+         "instr 1"
+         ""
+         "asig pluck 0.3, p5, 220, 0, p4, .1, 10"
+         "     outs asig, asig"
+         ""
+         ""
+         "endin"
+         ""
+         ""
+         ""
+         "instr 2"
+         ""
+         "aen	linen	0.17, 0.1, p3, 0.1"
+         ""
+         "asig poscil	aen, p5, p4"
+         "     outs asig, asig"
+         ""
+         ""
+         "endin"
+         ""
+         ""
+         ""
+         "instr 3"
+         ""
+         "asig	STKWurley p5, 0.5"
+         ""
+         "outs asig, asig"
+         ""
+         "endin"))))
+     (:add-slots ((:input-mode :lines-cols)))))
+   (:id 23))
+  (:box
+   (:type :object)
+   (:reference textbuffer)
+   (:group-id nil)
+   (:name nil)
+   (:x 331)
+   (:y 396)
+   (:w 80)
+   (:h 40)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :mini-view)
+   (:showname nil)
+   (:lock :locked)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "SELF")
+     (:value nil)
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "CONTENTS")
+     (:value nil)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "SELF") (:reactive nil))
+    (:output (:name "CONTENTS") (:reactive nil)))
+   (:window (:size nil) (:position nil))
+   (:edition-params)
+   (:value
+    (:object
+     (:class textbuffer)
+     (:slots
+      ((:contents
+        (:list
+         "f1   0    4096 10 1"
+         "f 2  	 0 	 4096	 10	 1    0.5  0.3  0.25 	0.2  0.167     0.14"
+         "0.125     .111	 .1	 .09"
+         "f3   0    2048 10   1    0    0.3  0    0.2  0         0.14      0         .111      ; Square"
+         "f4   0    2048 10   1    1    1    1    0.7  0.5       0.3       0.1                 ; Pulse"))))
+     (:add-slots ((:input-mode :lines-cols)))))
+   (:id 24))
+  (:comment
+   (:x 32)
+   (:y 261)
+   (:w 295)
+   (:h 188)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "The box below is a simple Csound orchestra file with three  different instruments: 1 a plucked string, 2 an oscilator, 3 a Wurlitzer electric piano emulator . The box to the right contains four wave forms for the oscilator: 1 sine waves,2 sawtooth waves, 3 cube waves, 4 pulse waves.
+")
+   (:id 25))
+  (:box
+   (:type :abstraction)
+   (:reference
+    (:patch
+     (:name "randomtimbre")
+     (:doc "")
+     (:info
+      (:created nil)
+      (:modified nil)
+      (:by *app-name*)
+      (:version 0))
+     (:window (:size nil) (:position nil))
+     (:grid nil)
+     (:lock nil)
+     (:boxes
+      (:box
+       (:type :function)
+       (:reference om-random)
+       (:group-id nil)
+       (:name "om-random")
+       (:x 62)
+       (:y 66)
+       (:w 123)
+       (:h 36)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:icon :left)
+       (:lock :eval-once)
+       (:lambda nil)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "LOW")
+         (:value 0)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "HIGH")
+         (:value 1)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 0))
+      (:box
+       (:type :value)
+       (:reference fixnum)
+       (:group-id nil)
+       (:name "value box")
+       (:x 79)
+       (:y 26)
+       (:w 32)
+       (:h 36)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 1.0))
+         (:t-or-nil t)))
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:reactive nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 1)
+       (:id 1))
+      (:box
+       (:type :value)
+       (:reference fixnum)
+       (:group-id nil)
+       (:name "value box")
+       (:x 136)
+       (:y 27)
+       (:w 32)
+       (:h 36)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 1.0))
+         (:t-or-nil t)))
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:reactive nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 3)
+       (:id 2))
+      (:box
+       (:type :special)
+       (:reference if)
+       (:group-id nil)
+       (:name "if")
+       (:x 127)
+       (:y 228)
+       (:w 70)
+       (:h 36)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:icon :left)
+       (:lock nil)
+       (:lambda nil)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "TEST")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "THEN")
+         (:value nil)
+         (:reactive nil))
+        (:input
+         (:type :optional)
+         (:name "else")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 3))
+      (:box
+       (:type :function)
+       (:reference om=)
+       (:group-id nil)
+       (:name "om=")
+       (:x 104)
+       (:y 141)
+       (:w 71)
+       (:h 36)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:icon :left)
+       (:lock nil)
+       (:lambda nil)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "NUM1")
+         (:value 0)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "NUM2")
+         (:value 0)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 4))
+      (:box
+       (:type :value)
+       (:reference fixnum)
+       (:group-id nil)
+       (:name "value box")
+       (:x 139)
+       (:y 102)
+       (:w 32)
+       (:h 36)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 1.0))
+         (:t-or-nil t)))
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:reactive nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 2)
+       (:id 5))
+      (:box
+       (:type :function)
+       (:reference om-random)
+       (:group-id nil)
+       (:name "om-random")
+       (:x 199)
+       (:y 140)
+       (:w 123)
+       (:h 36)
+       (:color nil)
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:icon :left)
+       (:lock nil)
+       (:lambda nil)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "LOW")
+         (:value 0)
+         (:reactive nil))
+        (:input
+         (:type :standard)
+         (:name "HIGH")
+         (:value 1)
+         (:reactive nil)))
+       (:outputs (:output (:name "out") (:reactive nil)))
+       (:id 6))
+      (:box
+       (:type :value)
+       (:reference fixnum)
+       (:group-id nil)
+       (:name "value box")
+       (:x 216)
+       (:y 101)
+       (:w 32)
+       (:h 36)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 1.0))
+         (:t-or-nil t)))
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:reactive nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 1)
+       (:id 7))
+      (:box
+       (:type :value)
+       (:reference fixnum)
+       (:group-id nil)
+       (:name "value box")
+       (:x 273)
+       (:y 102)
+       (:w 32)
+       (:h 36)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 1.0))
+         (:t-or-nil t)))
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:reactive nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 4)
+       (:id 8))
+      (:box
+       (:type :value)
+       (:reference fixnum)
+       (:group-id nil)
+       (:name "value box")
+       (:x 158)
+       (:y 188)
+       (:w 32)
+       (:h 36)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 1.0))
+         (:t-or-nil t)))
+       (:border nil)
+       (:roundness nil)
+       (:text-font nil)
+       (:align nil)
+       (:lock nil)
+       (:reactive nil)
+       (:inputs)
+       (:outputs (:output (:name "value") (:reactive nil)))
+       (:value 1)
+       (:id 9))
+      (:box
+       (:type :io)
+       (:reference
+        (:out (:type omout) (:name "out") (:index 1) (:doc "")))
+       (:group-id nil)
+       (:name "out")
+       (:x 39)
+       (:y 269)
+       (:w 45)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "out-value")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs)
+       (:id 10))
+      (:box
+       (:type :io)
+       (:reference
+        (:out (:type omout) (:name "out") (:index 2) (:doc "")))
+       (:group-id nil)
+       (:name "out")
+       (:x 135)
+       (:y 271)
+       (:w 45)
+       (:h 42)
+       (:color
+        (:color-or-nil
+         (:color (:color 1.0 1.0 1.0 0.0))
+         (:t-or-nil t)))
+       (:border 0)
+       (:roundness 0)
+       (:text-font nil)
+       (:align :center)
+       (:icon :top)
+       (:reactive nil)
+       (:inputs
+        (:input
+         (:type :standard)
+         (:name "out-value")
+         (:value nil)
+         (:reactive nil)))
+       (:outputs)
+       (:id 11)))
+     (:connections
+      (:connection (:from (:box 0 :out 0)) (:to (:box 4 :in 0)))
+      (:connection
+       (:from (:box 0 :out 0))
+       (:to (:box 10 :in 0))
+       (:attributes (:color nil :style nil :modif (0 -0.45))))
+      (:connection (:from (:box 1 :out 0)) (:to (:box 0 :in 0)))
+      (:connection (:from (:box 2 :out 0)) (:to (:box 0 :in 1)))
+      (:connection (:from (:box 3 :out 0)) (:to (:box 11 :in 0)))
+      (:connection (:from (:box 4 :out 0)) (:to (:box 3 :in 0)))
+      (:connection (:from (:box 5 :out 0)) (:to (:box 4 :in 1)))
+      (:connection
+       (:from (:box 6 :out 0))
+       (:to (:box 3 :in 1))
+       (:attributes (:color nil :style nil :modif (0 -17/54))))
+      (:connection (:from (:box 7 :out 0)) (:to (:box 6 :in 0)))
+      (:connection (:from (:box 8 :out 0)) (:to (:box 6 :in 1)))
+      (:connection
+       (:from (:box 9 :out 0))
+       (:to (:box 3 :in 2))
+       (:attributes (:color nil :style nil :modif (0 23/70)))))))
+   (:group-id nil)
+   (:name "randomtimbre")
+   (:x 366)
+   (:y 314)
+   (:w 150)
+   (:h 33)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align :center)
+   (:display :hidden)
+   (:pre-delay 0)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs)
+   (:outputs
+    (:output (:name "out") (:reactive nil))
+    (:output (:name "out") (:reactive nil)))
+   (:id 26))
+  (:comment
+   (:x 643)
+   (:y 307)
+   (:w 379)
+   (:h 68)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text
+    "To randomize the timbre, connect the first and second input of \"randomtimbre\" to the second and fourth input of the \"instrument0\" box.")
+   (:id 27))
+  (:comment
+   (:x 246)
+   (:y 74)
+   (:w 214)
+   (:h 48)
+   (:fgcolor nil)
+   (:bgcolor nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:text "This RNG gives the pitch of the bass note in midicents.")
+   (:id 28)))
  (:connections
-  (:connection (:from (:box 0 :out 0)) (:to (:box 2 :in 0)))
-  (:connection (:from (:box 2 :out 0)) (:to (:box 1 :in 0)))
-  (:connection (:from (:box 3 :out 0)) (:to (:box 10 :in 1)))
-  (:connection (:from (:box 4 :out 0)) (:to (:box 16 :in 1)))
-  (:connection (:from (:box 5 :out 0)) (:to (:box 3 :in 0)))
+  (:connection (:from (:box 1 :out 0)) (:to (:box 0 :in 0)))
+  (:connection (:from (:box 2 :out 0)) (:to (:box 9 :in 1)))
+  (:connection (:from (:box 3 :out 0)) (:to (:box 15 :in 1)))
+  (:connection (:from (:box 4 :out 0)) (:to (:box 2 :in 0)))
   (:connection
-   (:from (:box 6 :out 0))
-   (:to (:box 3 :in 1))
+   (:from (:box 5 :out 0))
+   (:to (:box 2 :in 1))
    (:attributes (:color nil :style nil :modif (0 -23/63))))
-  (:connection (:from (:box 7 :out 0)) (:to (:box 3 :in 2)))
-  (:connection (:from (:box 8 :out 0)) (:to (:box 11 :in 1)))
-  (:connection (:from (:box 9 :out 0)) (:to (:box 3 :in 3)))
-  (:connection (:from (:box 10 :out 0)) (:to (:box 2 :in 1)))
-  (:connection (:from (:box 11 :out 0)) (:to (:box 16 :in 0)))
-  (:connection (:from (:box 12 :out 1)) (:to (:box 15 :in 0)))
-  (:connection (:from (:box 13 :out 0)) (:to (:box 11 :in 0)))
-  (:connection (:from (:box 14 :out 0)) (:to (:box 17 :in 0)))
+  (:connection (:from (:box 6 :out 0)) (:to (:box 2 :in 2)))
+  (:connection (:from (:box 7 :out 0)) (:to (:box 10 :in 1)))
+  (:connection (:from (:box 8 :out 0)) (:to (:box 2 :in 3)))
+  (:connection (:from (:box 9 :out 0)) (:to (:box 1 :in 1)))
+  (:connection (:from (:box 10 :out 0)) (:to (:box 15 :in 0)))
+  (:connection (:from (:box 11 :out 1)) (:to (:box 14 :in 0)))
+  (:connection (:from (:box 12 :out 0)) (:to (:box 10 :in 0)))
+  (:connection (:from (:box 13 :out 0)) (:to (:box 16 :in 0)))
   (:connection
-   (:from (:box 15 :out 0))
-   (:to (:box 3 :in 4))
+   (:from (:box 14 :out 0))
+   (:to (:box 2 :in 4))
    (:attributes (:color nil :style nil :modif (0 -0.27277225))))
-  (:connection (:from (:box 16 :out 0)) (:to (:box 12 :in 1)))))
+  (:connection (:from (:box 15 :out 0)) (:to (:box 11 :in 1)))
+  (:connection (:from (:box 23 :out 0)) (:to (:box 1 :in 0)))
+  (:connection (:from (:box 24 :out 0)) (:to (:box 9 :in 0)))))
